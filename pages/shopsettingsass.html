@@ -1,0 +1,165 @@
+<div class="container ">
+    <ng-include src="'pages/searchbar.html'"></ng-include>
+
+                <div class="row">
+
+                  <!-- Section Labels -->
+                        <div class="row w-100">
+                          <div class="col-sm-3 align-items-center">
+                            <h3><span class="oneline">User Profile</span></h3>
+                          </div>
+                          <div class="col-sm-6 align-items-center">
+                            <h3><span class="oneline">Shop Info</span></h3>
+                          </div>
+                          <div class="col-sm-1 align-items-center">
+                            <h3><span class="oneline">Social Media</span></h3>
+                          </div>
+                          <div class="col-sm-2 align-items-center">
+
+                          </div>
+                        </div>
+
+
+                        <div class="row">
+
+                          <!-- User Profile Section -->
+                            <div class="col-sm-3 align-items-center">
+                                    <a href="#!/artistedit"><p class="online">Edit Shop Picture</p></a>
+                                    <img src="images/img_avatar2.png" class="img-fluid" />
+
+                                    <h3><span class="oneline">Current Rating</span></h3>
+                                    <ul>
+                                        <li class="oneline">4/5 (273 Reviews)</li>
+                                        <li class="oneline"><a href="#!/shopedit">Read Reviews</a></li>
+                                        <li><br/></li>
+                                    </ul>
+                            </div>
+
+                            <!-- Artist Info Section Labels -->
+                            <div class="col-sm-2">
+							  <p class="oneline">Address 1: </p>
+                              <p class="oneline">Address 2: </p>
+                              <p class="oneline">City: </p>
+                              <p class="oneline">State: </p>
+                              <p class="oneline">Zip: </p>
+                              <p class="oneline">Country: </p>
+
+                              <p class="oneline">Email: </p>
+                              <p class="oneline">Phone Number: </p>
+                              <p class="oneline">Website: </p>
+                              <p class="oneline">License Number: </p>
+                            </div>
+
+                            <!-- Artist Info Section Content -->
+                            <div class="col-sm-4">
+							  <input type="text" class="form-control" placeholder="123 W 45th St">
+                              <input type="text" class="form-control" placeholder="">
+                              <input type="text" class="form-control" placeholder="City">
+                              <input type="text" class="form-control" placeholder="State">
+                              <input type="text" class="form-control" placeholder="00000">
+                              <input type="text" class="form-control" placeholder="Country">
+							
+							
+                              <input type="text" class="form-control" placeholder="email@email.com">
+                              <input type="text" class="form-control" placeholder="123-345-6789">
+                              <input type="text" class="form-control" placeholder="website.com">
+                              <input type="text" class="form-control" placeholder="00000000">
+
+                                <ul>
+
+
+                                    <li><br/></li>
+                                    <li class="oneline"><h4>Appointment Status</h4></li>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Walk-Ins</label>
+                                    </div>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Appointments Only</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                      <label><input type="radio" name="optradio" disabled>Walk-Ins and Appointments</label>
+                                    </div>
+									
+									<li><br/></li>
+                                    <li class="oneline"><h4>Forms of Payment</h4></li>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Cash Only</label>
+                                    </div>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Cash and Card</label>
+                                    </div>
+
+                                    <li><br/></li>
+                                    <li class="oneline"><h4>Styles</h4></li>
+
+                                </ul
+                            </div>
+
+                            <!-- Social Media Section -->
+                            <div class="col-sm-3">
+                              <button class="btn btn-profile text-white" style="background-color: #3b5998;">Unlink Facebook</button>
+                              <button class="btn btn-profile text-white" style="background-color: #990000;">Unlink Instagram</button>
+                              <button class="btn btn-profile text-white" style="background-color: #0084b4;">Link Twitter</button>
+                                <ul>
+
+                                    <li><br/></li>
+                                    <li><h4>Events Calendar</h4></li>
+                                </ul>
+                                    <img src="images/calendar.jpg" class="img-fluid" />
+                            </div>
+
+                        </div>
+
+
+                        <!-- Shop Summary Section -->
+                        <div class="row w-100" style="margin-bottom: 10px;">
+                          <div class="col-sm-2"></div>
+                            <div class="col-sm-8 justify-content-center align-items-center">
+                                <span><hr /></span>
+                                <h1>Summary</h1>
+                                <div class="form-group">
+                                  <label for="comment">Shop Summary</label>
+                                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                                  <hr />
+                            </div>
+                            <div class="col-sm-2"></div>
+                        </div>
+
+                        <!-- Gallery Section -->
+                        <div class="row w-80  justify-content-center align-items-center" style="margin-bottom: 10px;">
+                                  <div class="row h-40">
+                                      <ng-include src="'pages/gallery2.html'"></ng-include>
+                                  </div>
+                                  <div class="row w-20" style="margin-bottom: 30px;">
+                                      <button class="btn btn-space text-white">+ Upload an Image</button>
+                                  </div>
+                        </div>
+						
+						<br/>
+						<br/>
+						
+						<!-- Artists Section -->
+                        <div class="row w-80  justify-content-center align-items-center" style="margin-bottom: 10px;">
+                                  <div class="row h-40">
+                                      <h3>Artists</h3>
+                                  </div>
+                                  <div class="row w-20" style="margin-bottom: 30px;">
+                                      <button class="btn btn-space text-white">+ Add Artist</button>
+                                  </div>
+                        </div>
+						
+						<!--Submition Button-->						
+						<div class="col-sm-3 align-items-center">
+                                    <ul>
+                                        
+										<a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/artistsettings'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">  Cancel     </button></a>
+									
+										<a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/artistsettings'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">  Save      </button></a>
+								
+										<a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/artistsettings'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">  Publish      </button></a>
+								
+                                    </ul>
+                        </div>
+            </div>
+</div>

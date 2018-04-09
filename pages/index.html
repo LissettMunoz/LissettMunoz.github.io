@@ -128,7 +128,7 @@
             		    	</div>
     				        <div class="modal-footer">
                                 <div>
-                                    <a href="" class="close" align="center" data-dismiss="modal" onclick="javascript:window.location='#!/userhome'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Login</button></a>
+                                    <a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/userhome'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Login</button></a>
                                 </div>
     				    	    
     				        </div>
@@ -143,6 +143,8 @@
                                     <span id="text-lost-msg">Type your e-mail.</span>
                                 </div>
     		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+								<button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
+                                <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
                 			</div>
     		    		    <div class="modal-footer">
                                 <div>
@@ -173,15 +175,16 @@
                                 <div class="checkbox">
                                     <label><input type="checkbox">Shop</label>
                                 </div>
+								<div>
+                                    <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
+                                    <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
+                                </div>
                 			</div>
     		    		    <div class="modal-footer">
                                 <div>
                                     <a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/userhome'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Register</button></a>
                                 </div>
-                                <div>
-                                    <button id="register_login_btn" type="button" class="btn btn-link">Log In</button>
-                                    <button id="register_lost_btn" type="button" class="btn btn-link">Lost Password?</button>
-                                </div>
+                      
     		    		    </div>
                         </form>
                         <!-- End | Register Form -->

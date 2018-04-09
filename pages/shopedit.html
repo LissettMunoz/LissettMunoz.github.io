@@ -1,0 +1,123 @@
+<div class="container ">
+    <ng-include src="'pages/searchbar.html'"></ng-include>
+
+                <div class="row">
+
+                  <!-- Section Labels -->
+                        <div class="row w-100">
+                          <div class="col-sm-3 align-items-center">
+                            <h3><span class="oneline">User Profile</span></h3>
+                          </div>
+                          <div class="col-sm-6 align-items-center">
+                            <h3><span class="oneline">Artist Info</span></h3>
+                          </div>
+                          <div class="col-sm-1 align-items-center">
+                            <h3><span class="oneline">Social Media</span></h3>
+                          </div>
+                          <div class="col-sm-2 align-items-center">
+
+                          </div>
+                        </div>
+
+
+                        <div class="row">
+
+                          <!-- User Profile Section -->
+                            <div class="col-sm-3 align-items-center">
+                                    <a href="#!/artistedit"><p class="online">Edit Profile Picture</p></a>
+                                    <img src="images/img_avatar2.png" class="img-fluid" />
+
+                                    <h3><span class="oneline">Current Rating</span></h3>
+                                    <ul>
+                                        <li class="oneline">4/5 (273 Reviews)</li>
+                                        <li class="oneline"><a href="#!/artistedit">Read Reviews</a></li>
+                                        <li><br/></li>
+                                    </ul>
+                            </div>
+
+                            <!-- Artist Info Section Labels -->
+                            <div class="col-sm-2">
+                              <p class="oneline">Email: </p>
+                              <p class="oneline">Phone Number: </p>
+                              <p class="oneline">Website: </p>
+                              <p class="oneline">License Number: </p>
+                            </div>
+
+                            <!-- Artist Info Section Content -->
+                            <div class="col-sm-4">
+
+                              <input type="text" class="form-control" placeholder="email@email.com">
+                              <input type="text" class="form-control" placeholder="123-345-6789">
+                              <input type="text" class="form-control" placeholder="website.com">
+                              <input type="text" class="form-control" placeholder="00000000">
+
+                                <ul>
+
+
+                                    <li><br/></li>
+                                    <li class="oneline"><h4>Appointment Status</h4></li>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Walk-Ins</label>
+                                    </div>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Appointments Only</label>
+                                    </div>
+                                    <div class="radio disabled">
+                                      <label><input type="radio" name="optradio" disabled>Walk-Ins and Appointments</label>
+                                    </div>
+
+                                    <li><br/></li>
+                                    <li class="oneline"><h4>Styles</h4></li>
+
+                                </ul>
+                                <button class="btn btn-space text-white">Black and White</button>
+                                <button class="btn btn-space text-white">Color</button>
+                                <button class="btn btn-space text-white">Nerdy</button>
+                                <button class="btn btn-space text-white">Tribal</button>
+                                <button class="btn btn-space text-white">+ Add A Style</button>
+
+
+                            </div>
+
+                            <!-- Social Media Section -->
+                            <div class="col-sm-3">
+                              <button class="btn btn-profile text-white" style="background-color: #3b5998;">Unlink Facebook</button>
+                              <button class="btn btn-profile text-white" style="background-color: #990000;">Unlink Instagram</button>
+                              <button class="btn btn-profile text-white" style="background-color: #0084b4;">Link Twitter</button>
+                                <ul>
+
+                                    <li><br/></li>
+                                    <li><h4>Events Calendar</h4></li>
+                                </ul>
+                                    <img src="images/calendar.jpg" class="img-fluid" />
+                            </div>
+
+                        </div>
+
+
+                        <!-- Artist Summary Section -->
+                        <div class="row w-100" style="margin-bottom: 10px;">
+                          <div class="col-sm-2"></div>
+                            <div class="col-sm-8 justify-content-center align-items-center">
+                                <span><hr /></span>
+                                <h1>Summary</h1>
+                                <div class="form-group">
+                                  <label for="comment">Artist Summary</label>
+                                  <textarea class="form-control" rows="5" id="comment"></textarea>
+                                </div>
+                                  <hr />
+                            </div>
+                            <div class="col-sm-2"></div>
+                        </div>
+
+                        <!-- Gallery Section -->
+                        <div class="row w-80  justify-content-center align-items-center" style="margin-bottom: 10px;">
+                                  <div class="row h-40">
+                                      <ng-include src="'pages/gallery2.html'"></ng-include>
+                                  </div>
+                                  <div class="row w-20" style="margin-bottom: 30px;">
+                                      <button class="btn btn-space text-white">+ Upload an Image</button>
+                                  </div>
+                        </div>
+            </div>
+</div>

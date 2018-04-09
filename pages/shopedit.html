@@ -9,7 +9,7 @@
                             <h3><span class="oneline">User Profile</span></h3>
                           </div>
                           <div class="col-sm-6 align-items-center">
-                            <h3><span class="oneline">Artist Info</span></h3>
+                            <h3><span class="oneline">Shop Info</span></h3>
                           </div>
                           <div class="col-sm-1 align-items-center">
                             <h3><span class="oneline">Social Media</span></h3>
@@ -24,19 +24,26 @@
 
                           <!-- User Profile Section -->
                             <div class="col-sm-3 align-items-center">
-                                    <a href="#!/artistedit"><p class="online">Edit Profile Picture</p></a>
+                                    <a href="#!/artistedit"><p class="online">Edit Shop Picture</p></a>
                                     <img src="images/img_avatar2.png" class="img-fluid" />
 
                                     <h3><span class="oneline">Current Rating</span></h3>
                                     <ul>
                                         <li class="oneline">4/5 (273 Reviews)</li>
-                                        <li class="oneline"><a href="#!/artistedit">Read Reviews</a></li>
+                                        <li class="oneline"><a href="#!/shopedit">Read Reviews</a></li>
                                         <li><br/></li>
                                     </ul>
                             </div>
 
                             <!-- Artist Info Section Labels -->
                             <div class="col-sm-2">
+							  <p class="oneline">Address 1: </p>
+                              <p class="oneline">Address 2: </p>
+                              <p class="oneline">City: </p>
+                              <p class="oneline">State: </p>
+                              <p class="oneline">Zip: </p>
+                              <p class="oneline">Country: </p>
+
                               <p class="oneline">Email: </p>
                               <p class="oneline">Phone Number: </p>
                               <p class="oneline">Website: </p>
@@ -45,7 +52,14 @@
 
                             <!-- Artist Info Section Content -->
                             <div class="col-sm-4">
-
+							  <input type="text" class="form-control" placeholder="123 W 45th St">
+                              <input type="text" class="form-control" placeholder="">
+                              <input type="text" class="form-control" placeholder="City">
+                              <input type="text" class="form-control" placeholder="State">
+                              <input type="text" class="form-control" placeholder="00000">
+                              <input type="text" class="form-control" placeholder="Country">
+							
+							
                               <input type="text" class="form-control" placeholder="email@email.com">
                               <input type="text" class="form-control" placeholder="123-345-6789">
                               <input type="text" class="form-control" placeholder="website.com">
@@ -65,18 +79,20 @@
                                     <div class="radio disabled">
                                       <label><input type="radio" name="optradio" disabled>Walk-Ins and Appointments</label>
                                     </div>
+									
+									<li><br/></li>
+                                    <li class="oneline"><h4>Forms of Payment</h4></li>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Cash Only</label>
+                                    </div>
+                                    <div class="radio">
+                                      <label><input type="radio" name="optradio">Cash and Card</label>
+                                    </div>
 
                                     <li><br/></li>
                                     <li class="oneline"><h4>Styles</h4></li>
 
-                                </ul>
-                                <button class="btn btn-space text-white">Black and White</button>
-                                <button class="btn btn-space text-white">Color</button>
-                                <button class="btn btn-space text-white">Nerdy</button>
-                                <button class="btn btn-space text-white">Tribal</button>
-                                <button class="btn btn-space text-white">+ Add A Style</button>
-
-
+                                </ul
                             </div>
 
                             <!-- Social Media Section -->
@@ -102,7 +118,7 @@
                                 <span><hr /></span>
                                 <h1>Summary</h1>
                                 <div class="form-group">
-                                  <label for="comment">Artist Summary</label>
+                                  <label for="comment">Shop Summary</label>
                                   <textarea class="form-control" rows="5" id="comment"></textarea>
                                 </div>
                                   <hr />
@@ -119,5 +135,34 @@
                                       <button class="btn btn-space text-white">+ Upload an Image</button>
                                   </div>
                         </div>
+						
+						<!-- Gallery Section -->
+                        <div class="row w-80  justify-content-center align-items-center" style="margin-bottom: 10px;">
+                                  <div class="row h-40">
+                                      <h3>Artists</h3>
+                                  </div>
+                                  <div class="row w-20" style="margin-bottom: 30px;">
+                                      <button class="btn btn-space text-white">+ Add Artist</button>
+                                  </div>
+                        </div>
+						
+						<!--Submition Button-->
+						<table style="width:100%">
+							<tr>
+								<th>
+									<a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/shopsettings'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Cancel</button></a>
+								</th>
+								<th>	
+									<a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/shopsettings'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Save</button></a>
+								</th> 
+								<th>
+									<a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/shopsettings'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Publish</button></a>
+								</th>
+							</tr>
+							<tr>
+							</tr>
+							<tr>
+							</tr>
+						</table>
             </div>
 </div>

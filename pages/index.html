@@ -113,9 +113,9 @@
                                     <div id="icon-login-msg" class="glyphicon glyphicon-chevron-right"></div>
                                     <span id="text-login-msg">Type your username and password.</span>
                                 </div>
-    				    		<input id="login_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+    				    		<input id="login_username" class="form-control" type="text" placeholder="Username" required>
     				    		<input id="login_password" class="form-control" type="password" placeholder="Password" required>
-                                <button class="btn btn-space text-white">Sign in With Instagram</button>
+                                <a href="#!/userhome" role="button" type="button" class="btn btn-space btn-lg"  data-dismiss="modal" target="#!/userhome" onclick="javascript:setTimeout(function () {   window.location.href = '#!/userhome'; }, 2000); ">Sign In With Instagram</a>
                                 <div class="checkbox">
                                     <label>
                                         <input type="checkbox"> Remember me
@@ -128,9 +128,9 @@
             		    	</div>
     				        <div class="modal-footer">
                                 <div>
-                                    <a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/userhome'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Login</button></a>
+                                    <a href="#!/userhome" role="button" type="button" class="btn btn-primary btn-lg"  data-dismiss="modal" target="#!/userhome" onclick="javascript:setTimeout(function () {   window.location.href = '#!/userhome'; }, 2000); ">Login</a>
                                 </div>
-    				    	    
+
     				        </div>
                         </form>
                         <!-- End # Login Form -->
@@ -142,7 +142,7 @@
                                     <div id="icon-lost-msg" class="glyphicon glyphicon-chevron-right"></div>
                                     <span id="text-lost-msg">Type your e-mail.</span>
                                 </div>
-    		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail (type ERROR for error effect)" required>
+    		    				<input id="lost_email" class="form-control" type="text" placeholder="E-Mail " required>
 								<div>
                                     <button id="lost_login_btn" type="button" class="btn btn-link">Log In</button>
                                     <button id="lost_register_btn" type="button" class="btn btn-link">Register</button>
@@ -150,9 +150,9 @@
                 			</div>
     		    		    <div class="modal-footer">
                                 <div>
-                                    <a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/userhome'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Send</button></a>
+                                    <a href="#!/userhome" role="button" type="button" class="btn btn-primary btn-lg"  data-dismiss="modal" target="#!/userhome" onclick="javascript:setTimeout(function () {   window.location.href = '#!/userhome'; }, 2000); ">Send</a>
                                 </div>
-                
+
     		    		    </div>
                         </form>
                         <!-- End | Lost Password Form -->
@@ -164,7 +164,7 @@
                                     <div id="icon-register-msg" class="glyphicon glyphicon-chevron-right"></div>
                                     <span id="text-register-msg">Register an account.</span>
                                 </div>
-    		    				<input id="register_username" class="form-control" type="text" placeholder="Username (type ERROR for error effect)" required>
+    		    				<input id="register_username" class="form-control" type="text" placeholder="Username" required>
                                 <input id="register_email" class="form-control" type="text" placeholder="E-Mail" required>
                                 <input id="register_password" class="form-control" type="password" placeholder="Password" required>
                                 <input id="register_password" class="form-control" type="confirmpassword" placeholder="Confirm Password" required>
@@ -181,9 +181,9 @@
                 			</div>
     		    		    <div class="modal-footer">
                                 <div>
-                                    <a href="" class="close" data-dismiss="modal" onclick="javascript:window.location='#!/userhome'"><button type="button" class="btn btn-primary btn-lg btn-block close"  data-dismiss="modal" aria-label="Close">Register</button></a>
+                                    <a href="#!/userhome" role="button" type="button" class="btn btn-primary btn-lg"  data-dismiss="modal" target="#!/userhome" onclick="javascript:setTimeout(function () {   window.location.href = '#!/userhome'; }, 2000); ">Register</a>
                                 </div>
-                      
+
     		    		    </div>
                         </form>
                         <!-- End | Register Form -->
@@ -198,11 +198,13 @@
 
 
 
-	
+
     <div style="background:transparent !important" class="jumbotron vertical-center">
   <div class="container">
 
-<p class="text-center pull-right"><a href="#" class="btn btn-primary btn-md" role="button" data-toggle="modal" data-target="#login-modal">Login</a></p>
+<p class="text-center pull-right">
+    <a href="#" id="home-login-btn" class="btn btn-primary btn-md" role="button" data-toggle="modal" data-target="#login-modal">Login or Register</a>
+</p>
 
 
 
@@ -213,14 +215,14 @@
 
        <div class="col-lg-6">
            <div class="input-group">
-               <input type="text" class="form-control" placeholder="Search Here! eg, Watercolor artist nearby...">
+               <input type="text" class="form-control" placeholder="Search Here! eg, Watercolor artist...">
 
                <span class="input-group-btn">
                    <a href="#!/search">  <button class="btn btn-default" type="button" >Go!</button></a>
                </span>
            </div><!-- /input-group -->
            <div class = "input-group w-50">
-               <input type="text" class="form-control" placeholder="Location">
+               <input type="text" class="form-control" placeholder="Location, eg Miami,FL">
            </div>
        </div><!-- /.col-lg-6 -->
     </div>

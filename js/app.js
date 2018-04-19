@@ -25,14 +25,14 @@ var app = angular.module('tatwho', []).
         when('/shopsettings', {
           templateUrl: 'pages/shopsettings.html'
         }).
+        when('/shopedit', {
+          templateUrl: 'pages/shopedit.html'
+        }).
         when('/search', {
           templateUrl: 'pages/search.html'
         }).
         when('/searchresults', {
           templateUrl: 'pages/dummysearch.html'
-        }).
-		when('/shopsettingsass', {
-          templateUrl: 'pages/shopsettingsass.html'
         }).
         otherwise({ redirectTo: '/' });
     }]).run(['$rootScope', '$http', '$browser', '$timeout', "$route", function ($scope, $http, $browser, $timeout, $route) {
